@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght,MONO@200..800,1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="text/javascript" src="./data.js"></script>
+    <title>Today I Learned</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img src="./logo.png" alt="Today I Learned Logo" />
+          <h1>Today I Learned</h1>
+        </div>
+
+        <button id="share-fact-btn" class="btn btn-large">Share a fact</button>
+      </header>
+      <form id="share-fact-form" class="share-fact-form hidden">
+        <input
+          type="text"
+          name="fact"
+          id="fact"
+          placeholder="Share a fact with the world..."
+        />
+        <span>200</span>
+        <input
+          type="text"
+          name="source"
+          id="source"
+          placeholder="Trustworthy source..."
+        />
+        <select name="category" id="category">
+          <option value="">Choose a category:</option>
+          <option value="technology">Technology</option>
+          <option value="science">Science</option>
+          <option value="finance">Finance</option>
+        </select>
+        <button class="btn btn-large btn-post">Post</button>
+      </form>
+
+      <main class="main">
+        <aside>
+          <ul id="categories" class="categories"></ul>
+        </aside>
+        <section>
+          <ul id="facts" class="facts"></ul>
+        </section>
+      </main>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
